@@ -7,12 +7,9 @@ import org.apache.tools.ant.taskdefs.condition.Os
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-  run {
-    val kotlinVersion = "1.3.72"
-    kotlin("jvm") version kotlinVersion
-    kotlin("plugin.spring") version kotlinVersion
-    kotlin("kapt") version kotlinVersion
-  }
+  kotlin("jvm")
+  kotlin("plugin.spring")
+  kotlin("kapt")
   id("org.springframework.boot") version "2.2.6.RELEASE"
   id("com.github.ben-manes.versions") version "0.28.0"
   id("com.gorylenko.gradle-git-properties") version "2.2.2"
